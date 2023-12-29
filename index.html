@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy New Year</title>
+    <meta name="viewport" content="width=960" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/flipclock.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Great+Vibes"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="http://peterschmalfeldt.com/images/favicon.ico"
+      rel="shortcut icon"
+    />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="http://peterschmalfeldt.com/images/apple/icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="http://peterschmalfeldt.com/images/apple/icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="http://peterschmalfeldt.com/images/apple/icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="http://peterschmalfeldt.com/images/apple/icon-144x144.png"
+    />
+
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 320px)"
+      href="http://peterschmalfeldt.com/images/apple/startup-image-320x460.jpg"
+    />
+    <!-- iPhone -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)"
+      href="http://peterschmalfeldt.com/images/apple/startup-image-640x920.jpg"
+    />
+    <!-- iPhone (Retina) -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+      href="http://peterschmalfeldt.com/images/apple/startup-image-640x1096.jpg"
+    />
+    <!-- iPhone 5 -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 768px) and (orientation: portrait)"
+      href="http://peterschmalfeldt.com/images/apple/startup-image-768x1004.jpg"
+    />
+    <!-- iPad (portrait) -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 768px) and (orientation: landscape)"
+      href="http://peterschmalfeldt.com/images/apple/startup-image-748x1024.jpg"
+    />
+    <!-- iPad (landscape) -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+      href="http://peterschmalfeldt.com/images/apple/startup-image-1536x2008.jpg"
+    />
+    <!-- iPad (Retina, portrait) -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+      href="http://peterschmalfeldt.com/images/apple/startup-image-1496x2048.jpg"
+    />
+    <!-- iPad (Retina, landscape) -->
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="now">
+      <div id="clock" style="font-size: 50px">Loading...</div>
+      <div id="currentTime" style="font-size: 35px">Loading...</div>
+    </div>
+    <div class="hitungmundur">
+      <hr style="width: 50%; margin-left: 25%" />
+      <br />
+      Sisa waktu menuju tahun baru 2024🥳
+    </div>
+    <!-- Waktu -->
+    <div class="wrapper">
+      <div class="clock animated flipInX"></div>
+    </div>
+    <canvas id="confetti"></canvas>
+    <div class="message">Happy New Year !!!</div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div class="text ms-2">
+      <!-- content -->
+      <div class="card bg-dark text-light">
+        <div class="card-header">
+          - Event Message <i class="fa-solid fa-envelope"> -</i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">by <i>Adh.</i></h5>
+          <p class="card-text text-right">
+            Selamat datang di platform istimewa saya! 🚀 Menyambut tahun baru
+            2024 dengan penuh semangat, saya menghadirkan sebuah inisiatif luar
+            biasa untuk menutup proyek akhir tahun 2023 saya...
+          </p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            style="font-size: 25px"
+          >
+            Baca selengkapnya
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-dark"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Pesan Istimewa
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Selamat datang di platform istimewa saya! 🚀 Menyambut tahun baru
+              2024 dengan penuh semangat, saya menghadirkan sebuah inisiatif
+              luar biasa untuk menutup proyek akhir tahun 2023 saya. Temen-temen
+              dapat berbagi cerita, kutipan inspiratif, atau harapan untuk tahun
+              mendatang, serta pesan confess untuk seseorang. <br /><br />Semua
+              konten akan ditampilkan saat hitungan mundur menuju tahun baru
+              2024 mencapai puncaknya! Dan itu belum semua! Bagi mereka yang
+              membagikan momen berharga mereka di platform saya, kesempatan emas
+              menanti!
+              <b
+                >saya akan memberikan hadiah ShopeePay kepada 5 orang beruntung
+                sebagai tanda terima kasih atas kontribusi unik mereka.</b
+              >
+              Jadi, jangan ragu lagi! 🎉✨
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mt-4" style="font-size: larger">
+        Bagikan momen anda disini :
+      </h4>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop1"
+        style="font-size: 25px"
+      >
+        Isi Formulir
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-dialog-scrollable text-dark"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Registrasi
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body d-none pesan-sukses">
+              <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Selamat!</h4>
+                <p>
+                  Anda berhasil melakukan registrasi.
+                  <b
+                    >Silahkan untuk menunggu tepat 00:00 pada 1 Januari untuk
+                    melihat wish/kata-kata/quotes anda ditampilkan. Dan jangan
+                    lupa klaim hadiah jika beruntung, karena hadiah terbatas.</b
+                  >
+                  Siapa cepat dia dapat ^_^ hehe...
+                </p>
+                <hr />
+                <p class="mb-0">
+                  Ada pertanyaan? bisa DM ke
+                  <a href="instagram.com/adhfry.r" target="_blank"
+                    >Instagram Admin</a
+                  >.
+                </p>
+              </div>
+            </div>
+            <form name="adh-message">
+              <div class="modal-body pesan-form">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Inputkan username*</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    style="font-size: 120%"
+                    required
+                    placeholder="contoh : Adh20"
+                    name="username"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    username tidak akan ditampilkan pada saat publish.
+                    Kombinasikan dengan angka agar lebih aman. Perhatikan huruf
+                    besar dan kecil.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password *</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    style="font-size: 120%"
+                    id="exampleInputPassword1"
+                    required
+                    name="password"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    Perhatikan huruf besar dan kecil.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="namapanggilan" class="form-label"
+                    >Nama Panggilan *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    style="font-size: 120%"
+                    id="namapanggilan"
+                    required
+                    placeholder="contoh : Adhfry"
+                    name="panggilan"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="quotes" class="form-label"
+                    >Quotes/Wish/Kata-kata/Confess *</label
+                  >
+                  <textarea
+                    class="form-control"
+                    style="font-size: 120%"
+                    id="quotes"
+                    required
+                    placeholder="Ungkapkan disini ^_^"
+                    name="pesan"
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="instagram" class="form-label"
+                    >Username Instagram</label
+                  >
+                  <i class="fa-brands fa-instagram"></i
+                  ><input
+                    type="text"
+                    class="form-control"
+                    style="font-size: 120%"
+                    id="instagram"
+                    placeholder="contoh : adhfry.r"
+                    name="instagram"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Nb : <u>* wajib diisi</u>
+                    <p>
+                      hanya nama panggilan yang akan ditampilkan ketika
+                      dipublish.
+                    </p>
+                    <p class="text-danger">
+                      harap simpan username dan password dengan benar, karena
+                      dibutuhkan untuk autentikasi pada saat pembagian hadiah!.
+                    </p></label
+                  >
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-kirim btn-primary btn-lg">
+                  Submit
+                </button>
+                <button
+                  class="btn btn-primary btn-lg btn-loading d-none"
+                  type="button"
+                  disabled
+                >
+                  <span
+                    class="spinner-grow spinner-grow-sm"
+                    aria-hidden="true"
+                  ></span>
+                  <span role="status">Loading...</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- contoh review -->
+      <p>Contoh momen/cerita yang akan ditampilkan:</p>
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+            <div class="carousel-inner" id="name">
+              <div class="item">
+                <blockquote>
+                  <div class="row">
+                    <div class="col-sm-3 text-center">
+                      (foto instagram jika menginputkan username instagram)
+                    </div>
+                    <div class="col-sm-9">
+                      <p>"Bismillah 2024 dapat pajero"</p>
+                      <div class="row">
+                        <small>
+                          ~ Adhfry
+                          <a
+                            href="https://instagram.com/adhfry.r"
+                            target="_blank"
+                            style="color: #f9f9f9; margin: 5px"
+                          >
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/flipclock.js"></script>
+    <script src="js/newyear.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d2d78fd0f2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        function updateCurrentTime() {
+          var now = new Date();
+
+          // Array nama hari dalam Bahasa Indonesia
+          var days = [
+            "Minggu",
+            "Senin",
+            "Selasa",
+            "Rabu",
+            "Kamis",
+            "Jumat",
+            "Sabtu",
+          ];
+          var dayName = days[now.getDay()];
+
+          var day = now.getDate();
+          var monthNames = [
+            "Januari",
+            "Februari",
+            "Maret",
+            "April",
+            "Mei",
+            "Juni",
+            "Juli",
+            "Agustus",
+            "September",
+            "Oktober",
+            "November",
+            "Desember",
+          ];
+          var monthName = monthNames[now.getMonth()];
+
+          var year = now.getFullYear();
+          var hours = addLeadingZero(now.getHours());
+          var minutes = addLeadingZero(now.getMinutes());
+          var seconds = addLeadingZero(now.getSeconds());
+
+          var formattedTime =
+            dayName + ", " + day + " " + monthName + " " + year;
+          var formattedClock = "" + hours + ":" + minutes + ":" + seconds;
+
+          // Tampilkan waktu di elemen dengan id "currentTime"
+          $("#currentTime").html(formattedTime);
+          $("#clock").html(formattedClock);
+        }
+
+        function addLeadingZero(number) {
+          return (number < 10 ? "0" : "") + number;
+        }
+
+        // Update the current time initially
+        updateCurrentTime();
+
+        // Update the current time every second
+        setInterval(updateCurrentTime, 1000);
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxGYKyLkK9lZnC7xtU5xptZhrWdCmhUKpbm9u71GJ4SLe5__nlV2eQ656Pu6f7zoqut/exec";
+      const form = document.forms["adh-message"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const pesanSukses = document.querySelector(".pesan-sukses");
+      const pesanForm = document.querySelector(".pesan-form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            // tampilkan alert
+            pesanSukses.classList.toggle("d-none");
+            pesanForm.classList.toggle("d-none");
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
