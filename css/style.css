@@ -13,6 +13,9 @@ body {
 .modal-backdrop {
   --bs-backdrop-zindex: 0;
 }
+.modal-backdrop {
+  z-index: 0 !important;
+}
 
 .message {
   font-family: "Great Vibes", cursive;

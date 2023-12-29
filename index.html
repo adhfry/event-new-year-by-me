@@ -498,6 +498,11 @@
       const btnLoading = document.querySelector(".btn-loading");
       const pesanSukses = document.querySelector(".pesan-sukses");
       const pesanForm = document.querySelector(".pesan-form");
+      $(document).ready(function () {
+        $(".modal").on("hidden.bs.modal", function () {
+          $(".modal-backdrop").remove();
+        });
+      });
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -515,31 +520,6 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-
-    <script>
-      // Pastikan Anda memanggil fungsi setelah elemen dimuat
-      window.onload = function () {
-        var modalBackdrop = document.querySelector(".modal-backdrop");
-        if (modalBackdrop) {
-          modalBackdrop.parentNode.removeChild(modalBackdrop);
-        }
-      };
-      $(document).ready(function () {
-        // Menghapus elemen dengan class "modal-backdrop" saat halaman dimuat
-        $(".modal-backdrop").remove();
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".tombol").click(function () {
-          // Menghilangkan .modal-backdrop
-          $(".modal-backdrop").remove();
-
-          // Mengatur --bs-backdrop-zindex: 0;
-          $(".modal-backdrop").css("--bs-backdrop-zindex", 0);
-        });
       });
     </script>
   </body>
