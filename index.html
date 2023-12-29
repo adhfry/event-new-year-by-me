@@ -130,7 +130,7 @@
           <!-- Button trigger modal -->
           <button
             type="button"
-            class="btn btn-primary btn-lg"
+            class="btn btn-primary btn-lg tombol"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
             style="font-size: 25px"
@@ -202,7 +202,7 @@
       <!-- Button trigger modal -->
       <button
         type="button"
-        class="btn btn-primary btn-lg"
+        class="btn btn-primary btn-lg tombol"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop1"
         style="font-size: 25px"
@@ -412,7 +412,6 @@
         </div>
       </div>
     </div>
-
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/flipclock.js"></script>
     <script src="js/newyear.js"></script>
@@ -530,6 +529,17 @@
       $(document).ready(function () {
         // Menghapus elemen dengan class "modal-backdrop" saat halaman dimuat
         $(".modal-backdrop").remove();
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".tombol").click(function () {
+          // Menghilangkan .modal-backdrop
+          $(".modal-backdrop").remove();
+
+          // Mengatur --bs-backdrop-zindex: 0;
+          $(".modal-backdrop").css("--bs-backdrop-zindex", 0);
+        });
       });
     </script>
   </body>
