@@ -641,7 +641,7 @@ var FlipClock;
      * The name of the clock face class in use
      */
 
-    countdown: false,
+    countdown: true,
 
     /**
      * The name of the default clock face class to use if the defined
@@ -696,7 +696,7 @@ var FlipClock;
      * Is the clock running? (True|False)
      */
 
-    running: false,
+    running: true,
 
     /**
      * The FlipClock.Time object
@@ -714,7 +714,7 @@ var FlipClock;
      * The jQuery object (depcrecated)
      */
 
-    $wrapper: false,
+    $wrapper: true,
 
     /**
      * Constructor
