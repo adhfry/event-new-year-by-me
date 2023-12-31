@@ -432,7 +432,7 @@
       src="https://kit.fontawesome.com/d2d78fd0f2.js"
       crossorigin="anonymous"
     ></script>
-
+    <!-- jquery untuk tanggal saat ini -->
     <script>
       $(document).ready(function () {
         function updateCurrentTime() {
@@ -492,6 +492,7 @@
         setInterval(updateCurrentTime, 1000);
       });
     </script>
+    <!-- tangkap pesan -->
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbxGYKyLkK9lZnC7xtU5xptZhrWdCmhUKpbm9u71GJ4SLe5__nlV2eQ656Pu6f7zoqut/exec";
@@ -518,6 +519,19 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <!-- alert tahun baru -->
+    <script>
+      // Fungsi untuk mengalihkan halaman
+      function redirectToNewPage() {
+        alert("Selamat Tahun Baru 2024!");
+        setInterval(1000);
+        // Ganti URL dengan URL halaman tujuan
+        window.location.href = "https://ucapan-tahun-baru-adh.vercel.app/";
+      }
+
+      // Panggil fungsi ketika seluruh halaman sudah dimuat
+      window.addEventListener("load", redirectToNewPage);
     </script>
     <script src="js/flipclock.js"></script>
     <script src="js/newyear.js"></script>
