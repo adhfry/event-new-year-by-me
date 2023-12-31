@@ -524,10 +524,22 @@
     <script>
       // Fungsi untuk mengalihkan halaman
       function redirectToNewPage() {
-        alert("Selamat Tahun Baru 2024!");
-        setInterval(1000);
-        // Ganti URL dengan URL halaman tujuan
-        window.location.href = "https://ucapan-tahun-baru-adh.vercel.app/";
+        var waktuSekarang = new Date();
+        if (
+          waktuSekarang.getFullYear() === 2004 &&
+          waktuSekarang.getMonth() === 0 && // Januari dimulai dari 0
+          waktuSekarang.getDate() === 1 &&
+          waktuSekarang.getHours() === 0 &&
+          waktuSekarang.getMinutes() === 0 &&
+          waktuSekarang.getSeconds() === 0
+        ) {
+          // Lakukan sesuatu di sini
+          console.log("Selamat Tahun Baru 2004!");
+          alert("Selamat Tahun Baru 2024!");
+          setInterval(1000);
+          // Ganti URL dengan URL halaman tujuan
+          window.location.href = "https://ucapan-tahun-baru-adh.vercel.app/";
+        }
       }
 
       // Panggil fungsi ketika seluruh halaman sudah dimuat
