@@ -526,12 +526,9 @@
       function redirectToNewPage() {
         var waktuSekarang = new Date();
         if (
-          waktuSekarang.getFullYear() === 2004 &&
-          waktuSekarang.getMonth() === 0 && // Januari dimulai dari 0
-          waktuSekarang.getDate() === 1 &&
-          waktuSekarang.getHours() === 0 &&
-          waktuSekarang.getMinutes() === 0 &&
-          waktuSekarang.getSeconds() === 0
+          waktuSekarang.getFullYear() === 2024 &&
+          waktuSekarang.getMonth() >= 0 && // Januari dimulai dari 0
+          waktuSekarang.getDate() >= 1
         ) {
           // Lakukan sesuatu di sini
           console.log("Selamat Tahun Baru 2004!");
